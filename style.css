@@ -27,7 +27,7 @@ footer li, nav ul li{
 
     --light1 : #FFFFFF;
     --light2 : #18E299;
-    --light3 : #848485;
+    --light3 : #B4B6B6  ;
     --light4 : #0C8C5E;
 
     --hover-shade1 :#ffffff10;
@@ -188,3 +188,55 @@ header ul a:hover{
     width: 60%;
 }
 /* companies svg container section ends here */
+
+/* built for intellgence section starts */
+.intelligent-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+}
+.intelligent-card-multibox{
+    grid-column: 1 / -1;
+}
+.intelligent-section h2{
+    text-align: center;
+    font-size: 4rem;
+    margin-block: 160px 25px;
+}
+.intelligent-section-p{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--light3);
+    margin-bottom: 50px;
+}
+.intelligent-card{
+    border: 1px solid var(--hover-shade1);
+    padding: 2.4rem;
+    border-radius: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.intelligent-card > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.intelligent-card-label{
+    color: var(--light2);
+    font-size: 1.2rem;
+}
+.intelligent-card h3{
+    font-size: 2.4rem;
+}
+.intelligent-card-p{
+    color: var(--light3);
+    font-size: 1.6rem;
+}
+.intelligent-cards img{
+    width: 100%;
+}
+/* built for intellgence section ends*/
