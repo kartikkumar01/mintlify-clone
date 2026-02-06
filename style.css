@@ -4,10 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
 }
 button{
     background-color: transparent;
     border: none;
+    color: inherit;
 }
 a{
     text-decoration: none;
@@ -25,6 +28,7 @@ footer li, nav ul li{
     --light1 : #FFFFFF;
     --light2 : #18E299;
     --light3 : #848485;
+    --light4 : #0C8C5E;
 
     --hover-shade1 :#ffffff10;
     font-size: 62.5%;
@@ -44,11 +48,10 @@ body{
     width:68%;
     margin: auto;
 }
-
 /* navbar styling started */
 header{
-    background: transparent;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
 }
 header div.content-boundary{
@@ -89,7 +92,85 @@ header ul a:hover{
     color: var(--dark-high);
 }
 /* navbar completed till here */
-
+.sample{
+    border: 0.1px solid transparent;
+}
 /* Hero section started here */
+.hero-section{
+    background-image: url(/assets/hero-image-top.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+.hero-section > .content-boundary{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    gap: 30px;
+}
+.docs-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8080808a;
+    width: max-content;
+    gap: 10px;
+    padding: 4px 6px;
+    border-radius: 15px;
+    margin: auto;
+}
+.docs-button .new-mark{
+    background-color: var(--light4);
+    padding: 3px 7px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.docs-button svg{
+    width: 16px;
+}
 
+.hero-section h1{
+    text-align: center;
+    font-size: 6.4rem;
+    line-height: 7.4rem;
+}
+.main-subtitle{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.start-now-input{
+    width: max-content;
+    background-color: #8080808a;
+    padding: 3px 4px 3px 10px;
+    border-radius: 50px;
+    margin: auto;
+}
+.start-now-input input::placeholder{
+    color:#80A1AB;
+}
+.start-now-input input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: inherit;
+    margin-left: 4px;
+}
+.start-now-input button{
+    border-radius: 50px;
+    padding: 8px 12px;
+    background-color: var(--light1);
+    color: var(--dark-high);
+}
+
+#heroBottomImage{
+    width: 100%;
+    border: 2px solid var(--hover-shade1);
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 80px;
+}
 /* Hero Section ended here */
