@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h5,h6{
+    font-size: 1.4rem;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+footer li, nav ul li{
+    list-style-type: none;
+}
+
+:root{
+    
+    /* for background */
+    --bg-dark : #14120B;
+    
+    --bg-medium1 : #1B1913;
+    
+    /* for highlights cards in last */
+    --bg-medium2 : #201E18;
+    --bg-medium3 : #23211d;
+    --bg-medium4 : #44423f;
+    --bg-medum2-hover : #26241E;
+    --text-light : #EDECEC;
+    --text-dark : #858481;
+    --text-link : #f54e00;
+    --text-link-hover:#BD3F03;
+
+    --button-hover:#c4c4c3;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+}
