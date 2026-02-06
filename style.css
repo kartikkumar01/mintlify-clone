@@ -384,3 +384,78 @@ margin-block: 16px;
     cursor: pointer;
 }
 /* customers section ends */
+
+/* bottom cta section starts here */
+.cta-section1{
+    padding-top:180px;
+    grid-column: 1 / -1;
+}
+.cta-section1 .cta1{
+    background-color: var(--light1);
+    color: var(--dark-high);
+    border-radius: 50px;
+    padding: 8px 12px;
+}
+.cta-section1 .cta2{
+    background-color: var(--light1);
+    border-radius: 50px;
+    padding: 8px 12px;
+    background-color: var(--hover-shade1);
+    border: 1px solid  var(--light3);
+    transition: 200ms linear;
+}
+.cta-section1 .cta2:hover{
+    background-color: #161718;
+    border: 1px solid transparent;
+}
+.cta-section1 h2{
+    font-size: 4rem;
+    line-height: 4.4rem;
+    text-align: center;
+
+}
+.cta-section1 p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-block: 20px 40px;
+}
+.cta-section1 div{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    gap: 10px;
+}
+.cta-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+}
+.cta-section2 img{
+    width: 60px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3   px 0px var(--light3);
+    margin-bottom: 18px;
+}
+.cta-section2 .cta-p1{
+    font-size: 2rem;
+}
+.cta-section2 .cta-p2{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.cta-section2 a{
+    display: block;
+    margin-top: 18px;
+    color: var(--light2);
+}
+
+.bottom-cta-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+}
+.ctal{
+    border-right: 1px solid rgba(255, 255, 255, 0.064);
+}
+/* bottom cta section ends here */
