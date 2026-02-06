@@ -174,3 +174,17 @@ header ul a:hover{
     margin-top: 80px;
 }
 /* Hero Section ended here */
+
+/* companies svg container section starts here */
+.companies-using{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+    place-items: center;
+    padding-inline: 20px;
+    margin-block: 100px;
+}
+.companies-using img{
+    width: 60%;
+}
+/* companies svg container section ends here */
