@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-h1,h2,h3,h5,h6{
-    font-size: 1.4rem;
 }
 button{
     background-color: transparent;
@@ -20,29 +19,77 @@ footer li, nav ul li{
 }
 
 :root{
-    
-    /* for background */
-    --bg-dark : #14120B;
-    
-    --bg-medium1 : #1B1913;
-    
-    /* for highlights cards in last */
-    --bg-medium2 : #201E18;
-    --bg-medium3 : #23211d;
-    --bg-medium4 : #44423f;
-    --bg-medum2-hover : #26241E;
-    --text-light : #EDECEC;
-    --text-dark : #858481;
-    --text-link : #f54e00;
-    --text-link-hover:#BD3F03;
+    --dark-high : #08090A;
+    --dark-mid : #151616;
 
-    --button-hover:#c4c4c3;
+    --light1 : #FFFFFF;
+    --light2 : #18E299;
+    --light3 : #848485;
+
+    --hover-shade1 :#ffffff10;
     font-size: 62.5%;
 }
 
 body{
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: "CursorGothic", "CursorGothic Fallback", system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.4rem;
+    background-color: var(--dark-high);
+    color: var(--light1);
+    font-family: inter, "inter Fallback";
+    font-size: 1.5rem;
 }
+
+
+/* IMP:Using it as website boundary */
+.content-boundary{
+    display: block;
+    width:68%;
+    margin: auto;
+}
+
+/* navbar styling started */
+header{
+    background: transparent;
+    position: sticky;
+    top: 0px;
+}
+header div.content-boundary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 12px;
+}
+header nav ul{
+    display: flex;
+    gap:15px;
+}
+header ul a{
+    padding: 6px 12px;
+}
+header ul a:hover{
+    transition: 200ms linear;
+    background-color: var(--hover-shade1);
+    border-radius: 50px;
+
+}
+#mintlifyLogo{
+    width: 110px;
+}
+.header-right{
+    display: flex;
+    gap: 8px;
+}
+#contactSalesBtn{
+    background-color: var(--hover-shade1);
+}
+#contactSalesBtn, #startFreeBtn{
+    border-radius: 50px;
+    padding: 8px 12px;
+}
+#startFreeBtn{
+    background-color: var(--light1);
+    color: var(--dark-high);
+}
+/* navbar completed till here */
+
+/* Hero section started here */
+
+/* Hero Section ended here */
