@@ -301,11 +301,12 @@ margin-block: 16px;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    transition: transform 150ms linear;
+    transition: transform 200ms linear;
 }
 .intelligence-section3:hover{
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.01);
+    opacity: 0.6;
 }
 .intelligence-section3 .count-desc{
     color: var(--light3);
@@ -344,3 +345,42 @@ margin-block: 16px;
     width: 160px;
 }
 /* bring intelligence section ends here */
+
+/* customers section starts */
+.customers-section span{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--light2);
+    text-align: center;
+    margin-block: 130px 10px;
+}
+.customers-section h3{
+    font-size: 4rem;
+    text-align: center;
+    margin-block: 10px;
+}
+.customers-section p{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-block: 10px 35px;
+    color: var(--light3);
+}
+.customers-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.customers-images > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* max-width: 100px; */
+    border-radius: 12px;
+    transition: transform 200ms linear;
+}
+.customers-images img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* customers section ends */
