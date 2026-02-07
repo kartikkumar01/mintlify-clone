@@ -53,6 +53,8 @@ header{
     position: fixed;
     width: 100%;
     top: 0px;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
 }
 header div.content-boundary{
     display: flex;
@@ -429,7 +431,7 @@ margin-block: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 20px;
+    padding-block: 20px 110px;
 }
 .cta-section2 img{
     width: 60px;
@@ -459,3 +461,114 @@ margin-block: 16px;
     border-right: 1px solid rgba(255, 255, 255, 0.064);
 }
 /* bottom cta section ends here */
+
+/* footer section starts here */
+footer{
+    background-color: var(--dark-mid);
+    padding-top: 50px;
+}
+.socials{
+    border: 1px solid rgba(255, 255, 255, 0.064);
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 30px 10px 30px;
+    align-items: flex-end;
+}
+.socials-left{
+    width: 110px;
+}
+.socials-right > a >img{
+    width: 30px;
+}
+.socials-right{
+    display: flex;
+    gap: 10px;
+}
+.links-section{
+    border: 1px solid rgba(255, 255, 255, 0.064);
+    display: flex;
+    justify-content: space-around;
+    padding-block: 55px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.link-list-title{
+    color: var(--light3);
+    font-size: 1.3rem;
+}
+.link-list li{
+    margin-block: 25px;
+}
+
+.grade-section{
+    padding: 20px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.064);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+.grade-section img{
+    width: 70px;
+    border-radius: 100px;
+}
+
+.footer-bottom{
+    border: 1px solid rgba(255, 255, 255, 0.064);
+    padding: 40px 25px 100px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-bottom-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #212222;
+    padding: 4px 12px;
+    border-radius: 50px;
+    gap: 5px;
+}
+.footer-bottom-left svg{
+    width: 15px;
+    height: 15px;
+}
+.footer-bottom-mid{
+    font-size: 1.3rem;
+    color: var(--light3);
+}
+.footer-bottom-right{
+    display: flex;
+    gap: 2rem;
+}
+
+.theme-selection{
+    background-color: #212222;
+}
+.theme-selection{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.theme-selection button{
+    border-radius: 20px;
+    padding:.4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.device-theme-btn{
+    background-color: var(--dark-high);
+}
+.light-theme-btn svg, .dark-theme-btn{
+    color: var(--light3);
+}
+.theme-selection svg:hover{
+    color: var(--light2);
+}
+.theme-selection,.theme-selection svg, .theme-selection button{
+    cursor: pointer;
+}
+/* footer section ends here */
